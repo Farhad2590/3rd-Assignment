@@ -44,7 +44,7 @@
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="p-0 btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -53,7 +53,7 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+            
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -61,7 +61,12 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey<span class="btn-color">’</span>s</a>
+
+                    <!-- <a class="btn btn-ghost text-xl lg:text-4xl">Hockey<span class="btn-color">’</span>s</a> -->
+                    <a class="btn btn-ghost text-xl lg:text-4xl">
+                        
+                        Hockey<span class="btn-color inline-block text-red-500">’</span>s
+                      </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -74,13 +79,79 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass pr-4"></i>
                     <a class="btn bg-btn-color text-white">Get Ticket</a>
                 </div>
             </div>
         </nav>
         <!-- slider  -->
-        <div class="carousel w-full mt-12">
+        <div class="carousel w-full z-10">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="my-8 rounded-2xl hero min-h-[600px]" style="background-image: url(./images/1.png);">
+                    <div class="hero-overlay bg-gray-500 bg-opacity-30"></div>
+                    <div class="hidden sm:block relative top-40 left-60">
+                        <div class=" bg-black p-8 w-fit text-white rounded-2xl">
+                            <h2 class=" text-2xl font-extrabold pb-4">Meet all the heroes from the field</h2>
+                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat
+                                dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="my-8 rounded-2xl hero min-h-[600px]" style="background-image: url(./images/1.png);">
+                    <div class="hero-overlay bg-gray-500 bg-opacity-30"></div>
+                    <div class="hidden sm:block relative top-40 left-60">
+                        <div class=" bg-black p-8 w-fit text-white rounded-2xl">
+                            <h2 class=" text-2xl font-extrabold pb-4">Meet all the heroes from the field</h2>
+                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat
+                                dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="my-8 rounded-2xl hero min-h-[600px]" style="background-image: url(./images/1.png);">
+                    <div class="hero-overlay bg-gray-500 bg-opacity-30"></div>
+                    <div class="hidden sm:block relative top-40 left-60">
+                        <div class=" bg-black p-8 w-fit text-white rounded-2xl">
+                            <h2 class=" text-2xl font-extrabold pb-4">Meet all the heroes from the field</h2>
+                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat
+                                dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="my-8 rounded-2xl hero min-h-[600px]" style="background-image: url(./images/1.png);">
+                    <div class="hero-overlay bg-gray-500 bg-opacity-30"></div>
+                    <div class="hidden sm:block relative top-40 left-60">
+                        <div class=" bg-black p-8 w-fit text-white rounded-2xl">
+                            <h2 class=" text-2xl font-extrabold pb-4">Meet all the heroes from the field</h2>
+                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat
+                                dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="carousel w-full mt-12">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="images/1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -108,6 +179,12 @@
                     <a href="#slide3" class="btn btn-circle">❮</a>
                     <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
+            </div>
+        </div> -->
+        <div class="lg:hidden">
+            <div class="  bg-black p-5 w-fit text-white">
+                <h2 class=" text-2xl font-extrabold">Meet all the heroes from the field</h2>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
         </div>
     </header>
@@ -409,8 +486,8 @@
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
-            <div class="flex place-content-around">
-                <div class="space-y-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div class="space-y-4 p-4">
                     <div class="bg-[#BCED6D1A] px-5 py-6 rounded-2xl">
                         <img src="images/call.png" alt="" srcset="">
                         <p>Phone Number : <br>
@@ -423,86 +500,131 @@
                     </div>
                     <div class="bg-[#629CF31A] px-5 py-6 rounded-2xl">
                         <img src="images/message.png" alt="" srcset="">
-                        <p>Location : <br> 
+                        <p>Location : <br>
                             152/1 Mohakhali Wireless Gate</p>
                     </div>
                 </div>
-                <div class="">
+                <div class=" bg-white p-8 col-span-2 rounded-md shadow-md">
+                    <form action="#" method="POST">
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                            <!-- Name Field -->
+                            <div class="mb-4">
+                                <label for="name" class="text-black text-xl font-bold mb-3">Your Name</label>
+                                <input type="text" placeholder="Enter your full name" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="mb-4">
+                                <label for="email" class="text-black text-xl font-bold mb-3">Your Email</label>
+                                <input type="text" placeholder="Enter your email" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                            <!-- Subject Field -->
+                            <div class="mb-4">
+                                <label for="subject" class="text-black text-xl font-bold mb-3">Subject</label>
+                                <input type="text" placeholder="Enter your subject" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+
+                            <!-- Phone Number Field -->
+                            <div class="mb-4">
+                                <label for="phone" class="text-black text-xl font-bold mb-3">Phone
+                                    Number</label>
+                                    <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+                        </div>
+
+                        <!-- Textarea Field -->
+                        <div class="mb-4">
+                            <label for="message" class="text-black text-xl font-bold mb-3">Message</label>
+                            <textarea class="textarea textarea-bordered w-full h-52 bg-[#13131808]"placeholder="Write your message"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <!-- <button type="submit" class="text-white btn bg-[btn-color] w-full rounded-md">Submit</button> -->
+                            <button class="btn btn-error w-full text-white">Get Started</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- <div class="">
                     <div class="flex">
                         <label class="form-control w-full max-w-xs">
                             <h4>Your Name</h4>
-                            <!-- <div class="label">
-                              <span class="label-text">What is your name?</span>
-                            </div> -->
                             <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                         </label>
                         <label class="form-control w-full max-w-xs">
-                            <h4>Your Name</h4>
+                            <h4>Your Email</h4>
                             <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                         </label>
                     </div>
                     <div class="flex">
                         <label class="form-control w-full max-w-xs">
-                            <h4>Your Name</h4>
-                            <!-- <div class="label">
-                              <span class="label-text">What is your name?</span>
-                            </div> -->
+                            <h4>Subject</h4>
                             <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                         </label>
                         <label class="form-control w-full max-w-xs">
-                            <h4>Your Name</h4>
+                            <h4>Phone Number</h4>
                             <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                         </label>
                     </div>
                     <div>
                         <label class="form-control">
-                            <h4>Your Name</h4>
+                            <h4>Message</h4>
                             <textarea class="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
                           </label>
                     </div>
                     <button class="btn btn-error">Send Message</button>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
-    <footer class="footer grid-rows-1 p-10 bg-neutral text-neutral-content">
+    <footer class="footer grid-rows-1 pt-24 px-10 bg-black text-neutral-content">
         <nav>
-          <header class="footer-title">Get In Touch</header> 
-          <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
-          <a class="link link-hover">hockeys@support.com</a>
-          <a class="link link-hover">(+62) 123-321-543</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Leadership</a>
-          <a class="link link-hover">Careers</a>
-          <a class="link link-hover">News & Article</a>
-          <a class="link link-hover">Legal Notice</a>
-        </nav> 
-        
-        <nav>
-          <header class="footer-title">Support</header> 
-          <a class="link link-hover">Help Center</a>
-          <a class="link link-hover">FAQ</a>
-          <a class="link link-hover">Ticket Support</a>
-          <a class="link link-hover">Contact Us</a>
-        </nav> 
+            <header class="footer-title font-extrabold text-2xl text-white">Get In Touch</header>
+            <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit
+                nullam proin. </p>
+            <a class="link link-hover">hockeys@support.com</a>
+            <a class="link link-hover">(+62) 123-321-543</a>
+        </nav>
+        <div class="grid-cols-2 gap-20 lg:grid-rows-2 lg:gap-x-36">
+            <nav class="flex flex-col">
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+    
+            <nav class="flex flex-col">
+                <header class="footer-title">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+        </div>
 
         <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Academy</a>
-          <a class="link link-hover">Group Lesson</a>
-          <a class="link link-hover">Private Lesson</a>
-          <a class="link link-hover">Hockeys for kids</a>
-          <a class="link link-hover">Hockeys for Adult</a>
-        </nav> 
-        
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adult</a>
+        </nav>
 
 
 
 
-      </footer>
+
+    </footer>
 </body>
 
 </html>
